@@ -27,7 +27,7 @@ function getRandomCapacity() {
 
 function getCarImage(idx) {
   const imageFile = `car${(idx + 1).toLocaleString('en-US', { minimumIntegerDigits: 2 })}.min.jpg` 
-  return `./images/${imageFile}`;
+  return `./assets/images/${imageFile}`;
 }
 
 function generateDescription(list) {

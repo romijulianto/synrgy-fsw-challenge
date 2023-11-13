@@ -28,10 +28,11 @@ class Binar {
       cars = this.populateCars(cacheCars);
     } else {
       const response = await fetch(
-        "https://raw.githubusercontent.com/fnurhidayat/probable-garbanzo/main/data/cars.min.json"
+        "https://raw.githubusercontent.com/romijulianto/synrgy-fsw-challenge/58da08641cb75aea9d068b03123d433856c62b8f/data/cars.min.json"
       );
       const body = await response.json();
-      cars = this.populateCars(body)
+      console.log(body)
+      cars = this.populateCars(body)``
 
       localStorage.setItem("CARS", JSON.stringify(cars));
     }
